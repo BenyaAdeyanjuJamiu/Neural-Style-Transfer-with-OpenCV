@@ -23,7 +23,7 @@ modelPaths = sorted(list(modelPaths))
 
 # generate unique IDs for each of the model paths, then combine the
 # two lists together
-models = list(zip(range(0, len(modelPaths)), (modelPaths)))
+models = list(zip(range(len(modelPaths)), modelPaths))
 
 # use the cycle function of itertools that can loop over all model
 # paths, and then when the end is reached, restart again
